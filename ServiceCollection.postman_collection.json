@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "6331eafd-9494-4d4f-8253-06992c9ea3fe",
+		"name": "ServiceCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29633687"
+	},
+	"item": [
+		{
+			"name": "GetAllServices",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/getAllServices",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"getAllServices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateService",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"serviceName\": \"Flu Vaccination\",\r\n    \"description\": \"A seasonal flu vaccine to protect against influenza.\",\r\n    \"price\": 30,\r\n    \"category\": \"Preventive Care\",\r\n    \"availability\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/addService",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"addService"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetService",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/getService/671073fe27b0e360bd9d7af5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"getService",
+						"671073fe27b0e360bd9d7af5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateService",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"price\": 100,\r\n    \"availability\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/updateService/6710744827b0e360bd9d7af9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"updateService",
+						"6710744827b0e360bd9d7af9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteService",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/deleteService/671074f631cc5bcec098b470",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"deleteService",
+						"671074f631cc5bcec098b470"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
